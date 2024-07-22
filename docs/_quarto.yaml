@@ -1,0 +1,56 @@
+project:
+  render:
+    - manuscript.qmd
+
+  
+title: "The title of the manuscript"
+short-title: "Manuscript title"
+author:
+  - name: Gonzalo Garcia-Castro
+    corresponding: true
+    orcid: 0000-0002-8553-4209
+    email: gonzalo.garciadecastro@sjd.es
+    affiliations:
+      - id: irsjd
+        name: Neurocognitive Comparative Development group
+        department: Institut de Recerca Sant Joan de Déu
+        city: Barcelona, 08950
+abstract: |
+  My abstract.
+
+format:
+  arxiv-pdf:
+    keep-tex: true  
+    linenumbers: true
+    doublespacing: false
+    runninghead: "Manuscript title"
+    include-in-header: 
+      text: |
+        \usepackage{tipa}
+        \usepackage{booktabs}
+        \DeclareTextFontCommand\textphonetic{\ipafont}
+    knitr:
+      opts_chunk:
+        dev: "cairo_pdf"
+    filters: 
+      - "_extensions/andrewheiss/wordcount/citeproc.lua"
+      - "_extensions/andrewheiss/wordcount/wordcount.lua"
+    fontfamily: "Times"
+  docx:
+    reference-doc: templates/template.docx
+
+keywords:
+  - keyword1
+  - keyword2
+  - phonology
+csl: apa7.csl
+bibliography: references.bib
+
+link-citations: true
+editor: source
+lang: en
+freeze: true
+fig-dpi: 1000
+echo: false
+warning: false
+

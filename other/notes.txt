@@ -1,0 +1,23 @@
+Quarto extensions:
+
+quarto add quarto-ext/fontawesome
+quarto add schochastics/academicons
+quarto add quarto-ext/fancy-text
+quarto add kapsner/authors-block
+quarto add leovan/quarto-pseudocode
+quarto add andrewheiss/quarto-wordcount
+quarto add danmackinlay/quarto_tikz
+
+Quarto templates:
+
+quarto add template wjschne/apaquarto
+quarto add template mikemahoney218/quarto-arxiv
+quarto add template mvuorre/preprint
+
+Python modules:
+
+numpy
+pandas
+matplotlib
+glob
+pytest
